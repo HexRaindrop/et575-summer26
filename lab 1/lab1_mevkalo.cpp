@@ -52,15 +52,15 @@ int main(){
     cin >> gender;
 
     // gender var converstion
-    if (gender == "m" or gender == "M"){
-        gender = "male";
-    }
-    if (gender == "f" or gender == "F"){
-        gender = "female";
-    }
-    if (gender == "o" or gender == "O"){
-        gender = "other";
-    }
+    // if (gender == "m" or gender == "M"){
+    //     gender = "male";
+    // }
+    // if (gender == "f" or gender == "F"){
+    //     gender = "female";
+    // }
+    // if (gender == "o" or gender == "O"){
+    //     gender = "other";
+    // }
 
     // output
     cout <<  string(50,'-') << endl;
