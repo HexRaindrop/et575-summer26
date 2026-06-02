@@ -25,7 +25,7 @@ int main(){
     cout << "\n" << string(10,'-') << "example theree" << string(10,'-') << endl;
 
     string n = "never";
-    string m = " agaian";
+    string m = "agaian";
     cout << n+m <<endl;
 
     cout << "\n" << string(10,'-') << "example four" << string(10,'-') << endl;
@@ -64,5 +64,32 @@ int main(){
     int never = username.find("NEVER");
     cout << "index of NEVER = " << never << endl;
 
+    cout << "\n" << string(10,'-') << "example ten" << string(10,'-') << endl;
+
+    cout << "the current username is = " << username << endl;
+    cout << "the curent keyword is = " << m << endl;
+
+    int index_123 = username.find("123");
+    username.insert(index_123,m);
+    cout << username << endl;
+
+    cout << "\n" << string(10,'-') << "practice exam 1" << string(10,'-') << endl;
+
+    string password = "peterpan123";
+    int a = password.length();
+    int b = a - 2;
+    password.replace(b,3,"NONE");
+
+    cout << "\n" << string(10,'-') << "ecercise" << string(10,'-') << endl;
+
+    string new_word;
+
+    cout << "Type a word: ";
+    cin >> new_word;
+    cout << "The 4th character is: " << new_word[3] << endl;
+    cout << "The length of the word is: " << new_word.length() << endl;
+    cout << "After replacement: " << new_word.replace(1,3,"-- $ --") << endl;
+    cout << "After removing two characters from the end: " << new_word.erase((new_word.length()-2)) << endl;
+    
     return 0;
 }
