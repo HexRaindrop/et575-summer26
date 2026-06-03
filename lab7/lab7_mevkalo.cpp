@@ -60,12 +60,57 @@ int main(){
     else {emittedligt = "UNDEFIEND";}
     cout << wavelengh << " nm emits " << emittedligt << " light" << endl;
 
+    cout << "\n ----- example  5----- " << endl;
+
+    cout << n << (( n % 2 == 0) ? " is an even number" : " is an odd number");
+
+    cout << "\n ----- example  6----- " << endl;
+    // check if n is greater then 10. if n is greater then 10, set the max value to n.
+    int max = 10;
+    bool checkmax = false;
+    if (n > 10) {
+        checkmax = (n > 10);
+        max = n;
+    }
+    cout << ((n > 10) ? "N is greater then 10" : "N is not greater then 10") << endl;
+
+    cout << (checkmax ? "N is greater then 10" : "N is not greater then 10") << endl;
+
+    cout << "\n ----- example  7----- " << endl;
+    bool is_even;
+    bool is_pos;
+    if (n>0){
+        if (n % 2 == 0){
+            is_even = true;
+            is_pos = true;
+            cout << "the number is even and positive" << endl;
+        }
+        else{
+            is_even = false;
+            is_pos = true;
+            cout << "the number is odd and positive" << endl;
+        }        
+    }
+    else if (n < 0){
+        if (n % 2 ==0){
+            is_even = true;
+            is_pos = false;
+            cout << "the number is even and negative" << endl;
+        }
+        else{
+            is_even = false;
+            is_pos = false;
+            cout << "the number is odd and negative" << endl;
+        }
+    }
+    else{ cout << "the number is 0";}
+
     cout << "\n ----- Lab exercise: ----- " << endl; 
 
     int weight_of_packege;
     float price_of_shipping;
 
-    cout << "enter a packege weight in pounds: " << endl;
+    cout << "enter a packege weight in pounds: ";
     cin >> weight_of_packege;
 
     if (weight_of_packege <= 2) {price_of_shipping = 5.0;}
@@ -74,6 +119,6 @@ int main(){
     else if (weight_of_packege > 10 ) {price_of_shipping = 12.50;}
     else {price_of_shipping = 0;}
 
-    cout << "A package of weight " << weight_of_packege << " costs $" << price_of_shipping;
+    cout << "A package of weight " << weight_of_packege << " costs $" << price_of_shipping << endl;
     return 0;
 }
