@@ -16,3 +16,7 @@ void printhi(){
 void greeting (string username){
     cout << "hello " << username << endl;
 }
+
+int dbnumber(int n){
+    return n*2;
+}

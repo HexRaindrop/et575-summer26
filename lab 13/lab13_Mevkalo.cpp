@@ -18,6 +18,10 @@ int main(){
     greeting("peter");
     string user = "annie";
     greeting(user);
+
+    cout << "---- example 3 ----" << endl;
+
+    dbnumber(1);
     return 0;
 }
 
