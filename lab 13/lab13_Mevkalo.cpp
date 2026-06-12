@@ -37,6 +37,12 @@ int main(){
 
     cout << "---- example 7 ----" << endl;
     cout << tripleaddtion() << endl;
+
+    cout << "----exersise 1 ----" << endl;
+    int user_input = collect_user_int();
+    print_all_int(user_input);
+    cout << "the number of int that are not multiples of 3 are " << count(user_input) << endl;
+    prompt_the_result(user_input, count(user_input));
     return 0;
 }
 
