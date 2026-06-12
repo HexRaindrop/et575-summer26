@@ -32,6 +32,11 @@ int main(){
     int r = random_num5_10();
     cout << r << endl;
 
+    cout << "---- Exercise A ----" << endl;
+    print_distance_results();
+
+
+
 
     return 0;
 }
