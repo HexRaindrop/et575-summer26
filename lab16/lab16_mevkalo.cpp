@@ -32,5 +32,22 @@ int main(){
     b(something);
     c(&something);
     a(something);
+
+    cout << "----- example three ----" << endl;
+
+    introarray();
+
+    cout << "----- example four ----" << endl;
+
+    const int s = 4;
+    int age[s] = {0};
+    printelements(s,age);
+
+    updatearry(s,age);
+
+    printelements(s,age);
+
+    int c = countadult(s,age);
+    cout << "adult 21+ = " << c << endl;
     return 0;
 }
