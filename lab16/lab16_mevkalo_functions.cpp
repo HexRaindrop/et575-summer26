@@ -91,5 +91,21 @@ int countadult(int size, int *arr){
     }
 
     return counter;
-
 }
+
+void Fill_Array_Function(int sizearray, int arr[]){
+    srand(time(NULL));
+    for (int i = 0; i < sizearray; i++){
+        arr[i] = 1 + rand() % 9;
+    }
+}
+int Count_Even_Numbers_Function(int sizearray, int arr[]){
+    int count=0;
+    for (int i = 0; i < sizearray; i++){
+        if (arr[i] % 2 == 0){
+            count++;
+        }
+    }
+    return count;
+}
+

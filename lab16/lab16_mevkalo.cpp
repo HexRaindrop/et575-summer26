@@ -10,6 +10,7 @@ Lab 16
 using namespace std;
 
 int main(){
+    
     // excercise A
     int* ptr; // we make a pointer called ptr
     int var = 7; // we make a variable called var
@@ -49,5 +50,16 @@ int main(){
 
     int c = countadult(s,age);
     cout << "adult 21+ = " << c << endl;
+
+
+    cout << "----- ecersise B ----" << endl;
+    const int size_arr = 10;
+    int random_arr[size_arr];
+
+    Fill_Array_Function(size_arr,random_arr);
+    for (int i = 0; i < size_arr; i++) cout << random_arr[i] << "\t";
+    cout << endl;
+    int number_even_in_arr = Count_Even_Numbers_Function(size_arr,random_arr);
+    cout << "the number of even numbers is " << number_even_in_arr << endl;
     return 0;
 }
