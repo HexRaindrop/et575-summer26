@@ -5,41 +5,9 @@ Lab 16
 */
 
 #include <iostream>
-// #include "lab16_mevkalo_functions.cpp"
-// im not sure why but the include didnt work so im moving everying to one file
+#include "lab16_mevkalo_functions.cpp"
+
 using namespace std;
-
-void intropinter(){
-int num = 12;
-char sym = '#';
-string n = "Peter";
-
-int* ptrint;
-char* ptrchar;
-string* ptrstring;
-
-
-cout<< ptrint<< endl;
-cout << ptrchar << endl;
-cout << ptrstring << endl;
-}
-
-// example 2 
-void a(string v){
-    cout << "A = " << v << endl;
-    v = "updated A";
-}
-
-void b(string& v){
-    cout << "B = " << v << endl;
-    v = "updated B";
-}
-
-void c(string* v){
-    cout << "c = " << v << endl;
-}
-
-
 
 int main(){
     // excercise A
