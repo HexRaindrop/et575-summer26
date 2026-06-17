@@ -21,6 +21,34 @@ int main(){
 
     cout << "---- example two ----" << endl;
     intro2darray();
+
+    cout << "\n---- example theree ----" << endl;
+
+    const int rowsize = 2;
+    int n[rowsize][3] = {
+        {1,2,3},
+        {4,5,6}
+    };
+
+    printarray(n,rowsize);
+
+    cout << "\n---- example four ----" << endl;
+
+    const int studnets = 3;
+    const int subjects = 4;
+    int grades[studnets][subjects] = {
+        {85,90,78,92},
+        {70,88,84,76},
+        {95,91,89,93}
+
+    };
+    int studentavg[studnets];
+
+    studentavarage(grades,studnets,subjects,studentavg);
+    printavg(studentavg, studnets);
+    
+
+
     return 0;
 }
     

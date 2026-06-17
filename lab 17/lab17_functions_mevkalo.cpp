@@ -24,7 +24,7 @@ void fill_up_arraray(int *arr, int &numberuserindex, int sizearry)
 
 void printelements(int *arr, int numberuserindex){
     for (int i = 0; i < numberuserindex; i++){
-        cout << arr[i] << "/t";
+        cout << arr[i] << "\t";
     }
     cout << endl;
 }
@@ -50,5 +50,32 @@ void intro2darray(){
         {100,89,92,90,80}
     };
 
-    cout << "the temperature in first row second col " << temperture[0][1];
+    cout << "\nthe temperature in first row second col " << temperture[0][1];
+}
+
+
+void printarray(int arr[][3], int rows){
+    for (int r = 0; r < rows; r++){
+        for (int c = 0; c < 3; c++){
+            cout << arr[r][c] << "\t";
+        }
+        cout << endl;
+    }
+}
+
+void studentavarage(int(*arr)[4], int sizestudents, int sizesubjects, int *avg){
+    int index = 0;
+    int sum = 0;
+    for (int r = 0; r<sizestudents; r++){
+        for (int c = 0; c<sizesubjects;c++){
+            sum +=arr[r][c];
+        }
+        avg[index = sum/sizesubjects];
+        index++;
+    }
+}
+void printavg(int *avg, int sizestudents){
+    for (int i = 0; i< sizestudents; i++){
+        cout << "student " << i+1 << " average grade =" << avg[i]<<endl;
+    }
 }
