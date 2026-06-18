@@ -65,12 +65,13 @@ void printarray(int arr[][3], int rows){
 
 void studentavarage(int(*arr)[4], int sizestudents, int sizesubjects, int *avg){
     int index = 0;
-    int sum = 0;
+    
     for (int r = 0; r<sizestudents; r++){
+        int sum = 0;
         for (int c = 0; c<sizesubjects;c++){
             sum +=arr[r][c];
         }
-        avg[index = sum/sizesubjects];
+        avg[index] = sum/sizesubjects;
         index++;
     }
 }
@@ -78,4 +79,25 @@ void printavg(int *avg, int sizestudents){
     for (int i = 0; i< sizestudents; i++){
         cout << "student " << i+1 << " average grade =" << avg[i]<<endl;
     }
+}
+void populateArray1D(int *arr, int &numberuserindex, int sizearry)
+{
+    int number, index = 0;
+    srand(time(0));
+    do {
+        number = (1+rand()%255);
+        arr[index] = number;
+        index++;
+    } while(number>0 && index < sizearry);
+
+    numberuserindex = index;
+}
+int  findMin (int *arr, int size_arr){
+    int lowest_number_index = 0;
+    for (int i = 0; i < size_arr; i++){
+        if (arr[i] < arr[lowest_number_index]){
+            lowest_number_index = i;
+        }
+    }
+    return arr[lowest_number_index];
 }

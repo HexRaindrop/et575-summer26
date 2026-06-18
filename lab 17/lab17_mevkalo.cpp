@@ -9,7 +9,7 @@ lab 17
 
 using namespace std;
 
-int main(){
+int main(){ /*
     const int sizea = 10;
     int a[sizea] = {0};
     int listsize;
@@ -47,7 +47,15 @@ int main(){
     studentavarage(grades,studnets,subjects,studentavg);
     printavg(studentavg, studnets);
     
-
+*/
+    cout << "\n---- Exercise A ----" << endl;
+    const int sizeB = 5;
+    int B[sizeB] = {0};
+    int listsizeB;
+    populateArray1D(B,listsizeB,sizeB);
+    printelements(B,listsizeB);
+    int minNumber = findMin(B,sizeB);
+    cout << "The minimum number is " << minNumber << endl;
 
     return 0;
 }
