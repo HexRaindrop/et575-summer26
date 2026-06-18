@@ -101,3 +101,22 @@ int  findMin (int *arr, int size_arr){
     }
     return arr[lowest_number_index];
 }
+
+void populateArray2D(int (*arr)[5], int size_arr_r, int size_arr_c, int minSize, int maxSize){
+    srand(time(0));
+    for (int r = 0; r<size_arr_r ; r++){
+        for (int c = 0; c < size_arr_c; c++){
+            arr[r][c] = (minSize+(rand()%((maxSize-minSize)+1)));
+        }
+    }
+}
+
+int range2D(int (*arr)[5],int size_arr_r, int size_arr_c, int minSize, int maxSize){
+    int totalNumber_count = 0;
+    for (int r = 0; r < size_arr_r; r++){
+        for (int c = 0; c < size_arr_c; c++){
+            if (arr[r][c] >= minSize && arr[r][c] <= maxSize) totalNumber_count ++; 
+        }
+    }
+    return totalNumber_count;
+}

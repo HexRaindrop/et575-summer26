@@ -57,6 +57,16 @@ int main(){ /*
     int minNumber = findMin(B,sizeB);
     cout << "The minimum number is " << minNumber << endl;
 
+    cout << "\n---- Exercise B ----" << endl;
+
+    int arrayNumber2D[sizeB][sizeB] = {0};
+    int max = 200;
+    int min = 150;
+    
+    populateArray2D(arrayNumber2D,sizeB,sizeB,min,max);
+
+    int totalNumber = range2D(arrayNumber2D,sizeB,sizeB, min, max);
+    cout << "\nArray has " << totalNumber << " number(s) between " << min << " and " << max << endl;
     return 0;
 }
     
