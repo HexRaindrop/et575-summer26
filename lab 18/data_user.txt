@@ -1,0 +1,2 @@
+This is my output file – John Smith.
+This is an appended message.
